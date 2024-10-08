@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAA_AW_RibbonConfigurator", "RAA_AW_RibbonConfigurator\RAA_AW_RibbonConfigurator.csproj", "{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug R24|Any CPU = Debug R24|Any CPU
+		Debug R25|Any CPU = Debug R25|Any CPU
+		Release R24|Any CPU = Release R24|Any CPU
+		Release R25|Any CPU = Release R25|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Debug R24|Any CPU.ActiveCfg = Debug R24|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Debug R24|Any CPU.Build.0 = Debug R24|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Debug R25|Any CPU.ActiveCfg = Debug R25|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Debug R25|Any CPU.Build.0 = Debug R25|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Release R24|Any CPU.ActiveCfg = Release R24|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Release R24|Any CPU.Build.0 = Release R24|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Release R25|Any CPU.ActiveCfg = Release R25|Any CPU
+		{E4E07DA0-7DF2-448F-A9CE-13278032BCAB}.Release R25|Any CPU.Build.0 = Release R25|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B70C116F-B5B2-491A-81F0-49FA42697BB8}
+	EndGlobalSection
+EndGlobal

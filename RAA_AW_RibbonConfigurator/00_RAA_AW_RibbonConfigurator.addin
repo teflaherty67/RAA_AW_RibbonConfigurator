@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>RAA_AW_RibbonConfigurator</Name>
+    <Assembly>RAA_AW_RibbonConfigurator\RAA_AW_RibbonConfigurator.dll</Assembly>
+    <FullClassName>RAA_AW_RibbonConfigurator.App</FullClassName>
+    <ClientId>a2202769-019a-478a-9f69-60e32bc1be54</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>
