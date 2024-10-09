@@ -1,4 +1,5 @@
-﻿namespace RAA_AW_RibbonConfigurator.Common
+﻿
+namespace RAA_AW_RibbonConfigurator.Common
 {
     internal static class Utils
     {
@@ -24,6 +25,31 @@
             }
 
             return null;
+        }
+
+        internal static List<clsTabData> GetTabData()
+        {
+            List<clsTabData> m_returnTabList = new List<clsTabData>();
+            List<string> m_tabNameList = Utils.GetTabNames();
+
+            foreach (string curTabName in m_tabNameList)
+            {
+                m_returnTabList.Add(new clsTabData(curTabName));
+            }
+
+            return m_returnTabList;
+        }
+
+        private static List<string> GetTabNames()
+        {
+            return new List<string>
+            {
+                "RAA Architectural",
+                "RAA Mechanical",
+                "RAA Electrical",
+                "RAA Plumbing",
+                "RAA Structural"
+            };
         }
     }
 }
