@@ -29,6 +29,28 @@ namespace RAA_AW_RibbonConfigurator
                 curTab.Panels.Add(Utils.CreateRibbonPanel(app, curTab.TabName, "Revit Tools"));
             }
 
+            // create buttons
+            PushButtonData btnConfig = cmdConfig.GetButtonData();
+            PushButtonData btnData1 = Command1.GetButtonData();
+            PushButtonData btnData2 = Command2.GetButtonData();
+
+            // add buttons to panels
+            foreach(clsTabData curTab in tabData)
+            {
+                foreach(RibbonPanel curPanel in curTab.Panels)
+                {
+                    if (curPanel.Name == "Config")
+                        curPanel.AddItem(btnConfig);
+                    else
+                    {
+                        curPanel.AddItem(btnData1);
+                        curPanel.AddItem(btnData2);
+                    }
+                }
+            }
+
+
+
             return Result.Succeeded;
         }
 
