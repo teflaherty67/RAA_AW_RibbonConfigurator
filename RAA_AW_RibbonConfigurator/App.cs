@@ -49,8 +49,6 @@ namespace RAA_AW_RibbonConfigurator
                 }
             }
 
-
-
             return Result.Succeeded;
         }
 
