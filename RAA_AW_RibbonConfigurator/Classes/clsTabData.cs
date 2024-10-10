@@ -10,6 +10,7 @@ namespace RAA_AW_RibbonConfigurator
     {
         public string TabName { get; set; }
         public bool IsVisible { get; set; }
+        public List<RibbonPanel> Panels { get; set; }
         public clsTabData(string _tabName)
         {
             TabName = _tabName;

@@ -11,6 +11,24 @@ namespace RAA_AW_RibbonConfigurator
             tabData = Utils.GetTabData();
             ribbon = AdWin.ComponentManager.Ribbon;
 
+            // create ribbon tabs
+            foreach(clsTabData curTab  in tabData)
+            {
+                try
+                {
+                    app.CreateRibbonTab(curTab.TabName);
+                }
+                catch (Exception)
+                {
+                    Debug.Print("Tab already exists");
+                }
+
+                // create panels
+                curTab.Panels = new List<RibbonPanel>();
+                curTab.Panels.Add(Utils.CreateRibbonPanel(app, curTab.TabName, "Config"));
+                curTab.Panels.Add(Utils.CreateRibbonPanel(app, curTab.TabName, "Revit Tools"));
+            }
+
             return Result.Succeeded;
         }
 
