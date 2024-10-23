@@ -51,5 +51,25 @@ namespace RAA_AW_RibbonConfigurator.Common
                 "RAA Structural"
             };
         }
+
+        internal static string GetConfigPath()
+        {
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string configPath = Path.Combine(path, "ribbon.config");
+
+            return configPath;
+        }
+
+        private static void CreateConfigFile(string path)
+        {
+            // create the file
+            using(StreamWriter writer = new StreamWriter(path))
+            { 
+                foreach(string curTabName in GetTabNames())
+                {
+                    writer.WriteLine(curTabName + ", Show");
+                }
+            }
+        }
     }
 }
